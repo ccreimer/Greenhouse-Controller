@@ -8,6 +8,8 @@
 <body>
     <h1>Greenhouse Temp Control</h1>
     <p>Current Temperature: {{ current_temperature }}°C</p>
+    <p>Current High Setpoint: {{ high_setpoint }}°C</p>
+    <p>Current Low Setpoint: {{ low_setpoint }}°C</p>
     <form method="post">
         <label for="high_setpoint">High Setpoint:</label>
         <input type="number" step="0.1" name="high_setpoint" value="{{ high_setpoint }}" required>
